@@ -27,7 +27,9 @@ win32:CONFIG(release, debug|release) {
 RC_ICONS = data/core/icons/vnote.ico
 ICON = data/core/icons/vnote.icns
 
-TRANSLATIONS += data/core/translations/vnote_zh_CN.ts
+TRANSLATIONS += \
+    data/core/translations/vnote_zh_CN.ts \
+    data/core/translations/vnote_ja.ts
 
 SOURCES += \
     commandlineoptions.cpp \
@@ -46,6 +48,8 @@ include($$PWD/utils/utils.pri)
 include($$PWD/export/export.pri)
 
 include($$PWD/search/search.pri)
+
+include($$PWD/snippet/snippet.pri)
 
 include($$PWD/core/core.pri)
 
